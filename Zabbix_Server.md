@@ -160,9 +160,9 @@ Username: "Admin"
 Password: "zabbix"
 ```
 
-- Voici une capture d’écran de ce à quoi devrait ressembler le tableau de bord.
-
 ![Zabbix](/assets/07.png)
+
+- Voici une capture d’écran de ce à quoi devrait ressembler le tableau de bord.
 
 ![Zabbix](/assets/08.png)
 
@@ -181,3 +181,7 @@ Password: "zabbix"
 ![Zabbix](/assets/10.png)
 
 - Les graphiques et tableaux de bord des hôtes sont accessibles via Surveillance > Hôtes . Vous pouvez ajouter d'autres hôtes en leur attribuant un nom et une adresse IP. N'oubliez pas de configurer l'agent Zabbix sur le terminal.
+
+- **Conclusion**
+
+  - Zabbix est une solution de surveillance performante et évolutive, adaptée aux petites comme aux grandes entreprises. Si vous avez besoin d'une configuration hautement disponible, Zabbix propose une [configuration en cluster](https://www.zabbix.com/documentation/current/en/manual/concepts/server/ha) . Cette installation sur un seul serveur convient aux petites infrastructures avec moins d'appareils répartis sur un même DC.
