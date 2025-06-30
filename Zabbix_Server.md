@@ -164,19 +164,19 @@ Password: "zabbix"
 
 ![Zabbix](/assets/07.png)
 
+![Zabbix](/assets/08.png)
+
 #### 6 - Définissez un mot de passe utilisateur administrateur fort.
 
 - Accédez à ` Utilisateurs  >  Admin  >  Mot de passe  >  Modifier le mot de passe` comme ci-dessous.
 
-![Zabbix](/assets/08.png)
+![Zabbix](/assets/09.png)
 
 - Définissez un mot de passe fort pour l'utilisateur administrateur afin de mieux sécuriser votre installation Zabbix contre les attaques.
 
 #### 7 - Ajout d'agents de surveillance au serveur Zabbix
 
 - Pour ajouter un nouvel hôte cible à surveiller par Zabbix, accédez à `Configuration  >  Hôtes` , vous devriez voir l'état du serveur Zabbix local activé comme ci-dessous.
-
-![Zabbix](/assets/09.png)
 
 ![Zabbix](/assets/10.png)
 
