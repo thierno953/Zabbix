@@ -29,10 +29,11 @@ zabbix_agent@zabbixagent:~$ sudo nano /etc/snmp/snmpd.conf
 
 ```sh
 # Configuration minimale
-sysLocation "IT Room, Building A"
-sysContact "admin@example.com"
-agentAddress udp:161,udp6:[::1]:161
-rocommunity public 127.0.0.1  # Accès local uniquement (optionnel)
+sysLocation    "IT Room, Building A"
+sysContact     "admin@example.com"
+agentaddress  udp:161,udp6:[::1]:161
+
+rocommunity  public 127.0.0.1  # Accès local uniquement (optionnel)
 
 rouser snmpv3user authPriv
 view systemview included .1.3.6.1.2.1
@@ -52,7 +53,7 @@ zabbix_agent@zabbixagent:~$ sudo systemctl stop snmpd
 - Cette commande crée un utilisateur SNMPv3 nommé snmpv3user avec un accès en lecture seule, en utilisant SHA comme protocole d'authentification avec le mot de passe auth_Password et AES comme protocole de cryptage avec le mot de passe privacy_Password.
 
 ```sh
-zabbix_agent@zabbixagent:~$  sudo net-snmp-create-v3-user -ro -a SHA -A "auth_Password" -x AES -X "privacy_Password" snmpv3user
+zabbix_agent@zabbixagent:~$ sudo net-snmp-create-v3-user -ro -a SHA -A "auth_Password" -x AES -X "privacy_Password" snmpv3user
 ```
 
 #### Maintenant, redémarrez le service SNMP pour appliquer la modification
