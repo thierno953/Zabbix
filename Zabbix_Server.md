@@ -126,3 +126,58 @@ sudo systemctl enable zabbix-server zabbix-agent apache2
 ```sh
 sudo systemctl status zabbix-server zabbix-agent apache2
 ```
+
+#### 5 - Configurer le serveur Zabbix à partir de l'interface Web
+
+- Ouvrez votre navigateur et accédez à l'interface Web Zabbix en utilisant l'URL `http://SeverIP/zabbix/` ou `http://hostname/zabbix/`
+
+![Zabbix](/assets/01.png)
+
+- Cliquez sur `Étape suivante` et confirmez que toutes les dépendances sont respectées. Le message `OK` devrait s'afficher.
+
+![Zabbix](/assets/02.png)
+
+- Définissez les détails de votre base de données comme configuré précédemment.
+
+![Zabbix](/assets/03.png)
+
+- Donnez un nom à votre serveur Zabbix (par exemple, le nom d'hôte). Choisissez également le thème par défaut et définissez correctement le fuseau horaire.
+
+![Zabbix](/assets/04.png)
+
+- Confirmez que toutes les configurations sont correctement définies, puis finalisez le processus.
+
+![Zabbix](/assets/05.png)
+
+- Un message de félicitations s'affiche si tout s'est déroulé comme prévu. Terminez l'installation pour vous connecter.
+
+![Zabbix](/assets/06.png)
+
+- Utilisez les informations d’identification par défaut suivantes pour accéder au tableau de bord d’administration de Zabbix.
+
+```sh
+Username: "Admin"
+Password: "zabbix"
+```
+
+- Voici une capture d’écran de ce à quoi devrait ressembler le tableau de bord.
+
+![Zabbix](/assets/07.png)
+
+#### 6 - Définissez un mot de passe utilisateur administrateur fort.
+
+- Accédez à ` Utilisateurs  >  Admin  >  Mot de passe  >  Modifier le mot de passe` comme ci-dessous.
+
+![Zabbix](/assets/08.png)
+
+- Définissez un mot de passe fort pour l'utilisateur administrateur afin de mieux sécuriser votre installation Zabbix contre les attaques.
+
+#### 7 - Ajout d'agents de surveillance au serveur Zabbix
+
+- Pour ajouter un nouvel hôte cible à surveiller par Zabbix, accédez à `Configuration  >  Hôtes` , vous devriez voir l'état du serveur Zabbix local activé comme ci-dessous.
+
+![Zabbix](/assets/09.png)
+
+![Zabbix](/assets/10.png)
+
+- Les graphiques et tableaux de bord des hôtes sont accessibles via Surveillance > Hôtes . Vous pouvez ajouter d'autres hôtes en leur attribuant un nom et une adresse IP. N'oubliez pas de configurer l'agent Zabbix sur le terminal.
