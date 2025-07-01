@@ -74,7 +74,7 @@
 
 ![website](/assets/Zabbix_Website_06.png)
 
-- Cliquez sur **Add** (ou **Update**) pour enregistrer le scénario complet.
+- Cliquez sur **Add** pour enregistrer le scénario complet.
 
 ![website](/assets/Zabbix_Website_07.png)
 
