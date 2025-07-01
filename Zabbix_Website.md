@@ -78,13 +78,39 @@
 
 ![website](/assets/Zabbix_Website_07.png)
 
+#### Résultat attendu
+
+- Zabbix exécutera cette requête HTTP toutes les minutes.
+
+- Il vérifiera que le code HTTP est **200**.
+
+- Il vérifiera que la réponse contient le mot **Bienvenue**.
+
+- Si l’une des conditions échoue → une **alerte** peut être déclenchée (si un trigger est ajouté).
+
 ![website](/assets/Zabbix_Website_08.png)
 
+#### Créer un Trigger
+
+- Allez dans l’onglet **Triggers** de l’hôte **Agent01**
+
+- Cliquez sur **Create trigger**
+
+```sh
+last(/agent01/web.test.fail[Media_Library],#1)>0
+```
+
+- | **Severity** | `High (ou Warning)` |
+
 ![website](/assets/Zabbix_Website_09.png)
+
+- Cliquez sur **Add**
 
 ![website](/assets/Zabbix_Website_10.png)
 
 ![website](/assets/Zabbix_Website_11.png)
+
+- Arrêt du serveur Web : `sudo systemctl stop nginx`
 
 ```sh
 sudo systemctl stop nginx
@@ -96,8 +122,12 @@ sudo systemctl stop nginx
 
 ![website](/assets/Zabbix_Website_14.png)
 
+- Reprise du service : `sudo systemctl start nginx`
+
 ```sh
 sudo systemctl start nginx
 ```
 
 ![website](/assets/Zabbix_Website_15.png)
+
+- **Remarque** Zabbix affiche l’erreur → envoie une alerte → puis le problème disparaît une fois le service relancé.
