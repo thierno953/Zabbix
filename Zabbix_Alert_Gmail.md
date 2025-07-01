@@ -1,6 +1,6 @@
 # Zabbix Alertes de notifications utilisant Gmail
 
-#### Générer un mot de passe d'application pour Gmail
+## Générer un mot de passe d'application pour Gmail
 
 ![gmail](/assets/Zabbix_alert_00.png)
 
