@@ -60,13 +60,21 @@
 
 ![website](/assets/Zabbix_Website_02.png)
 
+#### Ajouter un `step` (étape) :
+
+- Cliquez sur **Add** puis remplissez
+
 ![website](/assets/Zabbix_Website_03.png)
 
 ![website](/assets/Zabbix_Website_04.png)
 
+- Cliquez sur **Add**.
+
 ![website](/assets/Zabbix_Website_05.png)
 
 ![website](/assets/Zabbix_Website_06.png)
+
+- Cliquez sur **Add** (ou **Update**) pour enregistrer le scénario complet.
 
 ![website](/assets/Zabbix_Website_07.png)
 
